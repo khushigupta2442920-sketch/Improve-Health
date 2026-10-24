@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HealthNest Goals & Routine: small steps toward healthier everyday habits."><title>Goals & Routine | HealthNest</title><link rel="stylesheet" href="css/style.css"><script defer src="js/script.js"></script></head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            
+            <span class="brand-mark">✳</span>
+            <span>HealthNest<small>Small steps. Healthier life.</small></span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a class="" href="index.html">Home</a>
+            <a class="" href="dashboard.html">Dashboard</a>
+            <a class="active" href="goals.html">Goals</a>
+            
+            <a class="" href="natural-care.html">Natural Care</a>
+            <a class="" href="nutrition.html">Nutrition</a>
+            <a class="" href="fitness.html">Fitness</a>
+            <a class="" href="health-library.html">Library</a>
+            <a class="" href="diary.html">Diary</a>
+            <a class="" href="chat.html">Chat</a>
+        </nav>
+        <a class="header-cta" href="goals.html">Plan my day <span>↗</span>
+        </a>
+    </header>
+<main>
+    <section class="page-hero container">
+        <div>
+            <span class="eyebrow">
+                <span class="dot">
+
+                </span> YOUR ROUTINE, YOUR WAY</span>
+                <h1>Turn intentions into <em>small actions.</em></h1>
+                <p class="lead">Create personal goals, choose a reminder time and check them off when you're done.</p>
+            </div>
+            <div class="page-hero-art">
+                <span>✳</span>
+                <i>♧</i>
+            </div>
+        </section>
+        <section class="container page-content">
+<div class="content-grid goals-layout"><section class="panel">
+    <div class="panel-heading">
+        <div>
+            <span class="eyebrow">ADD A GOAL</span>
+            <h2>Plan a small step</h2>
+        </div>
+        <span class="panel-emoji">✳</span>
+    </div>
+    <form id="goal-form" class="stack-form">
+        <label for="goal-title">What would you like to do?</label>
+        <input id="goal-title" name="title" maxlength="90" required placeholder="e.g. Take a 20-minute walk">
+        <div class="form-row">
+            <div>
+                <label for="goal-category">Category</label>
+                <select id="goal-category">
+                    <option>Health</option>
+                    <option>Natural Care</option>
+                    <option>Study</option>
+                    <option>Personal Work</option>
+                    <option>Mindfulness</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="goal-time">Reminder time</label>
+                <input id="goal-time" type="time" value="08:00" required>
+            </div>
+        </div>
+        <label class="check-label">
+            <input type="checkbox" id="goal-reminder" checked> Remind me at this time while the website is open</label>
+            <button class="btn btn-primary" type="submit">Add to my goals <span>+</span></button>
+            <p class="form-hint">This starter version stores goals in this browser on this device.</p>
+        </form>
+    </section>
+    <section class="panel"><div class="panel-heading">
+        <div>
+            <span class="eyebrow">TODAY'S PLAN</span>
+            <h2>My goals <span class="count-pill" id="goal-count">0</span>
+</h2>
+</div>
+<button class="small-button" id="clear-completed" type="button">Clear completed</button>
+</div>
+<div id="goal-list" class="goal-list">
+    <p class="empty-state">No goals yet. Add your first small step.</p>
+</div>
+</section>
+</div>
+<div class="notice">
+    <span>🔔</span>
+    <div>
+        <strong>About notifications</strong>
+        <p>Browser notifications require your permission. In this prototype, 
+            timed reminders work while the Goals page is open. Reminders 
+            when the website is closed need a later push-notification 
+            setup and usually a server.</p>
+            <button class="text-button" id="enable-notifications" type="button">Enable browser notifications</button>
+            <span id="notification-status" class="muted">
+
+            </span>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="site-footer"><a class="brand" href="index.html">
+    <span class="brand-mark">✳</span><span>HealthNest<small>Small steps. Healthier life.</small></span>
+</a>
+<p>Wellness guidance for everyday life — not a replacement for medical care.</p>
+<div>
+    <a href="privacy.html">Privacy & safety</a>
+    <a href="profile.html">Profile & settings</a>
+    <span>© <span data-year>
+
+    </span> HealthNest</span>
+</div>
+</footer>
+</body>
+</html>

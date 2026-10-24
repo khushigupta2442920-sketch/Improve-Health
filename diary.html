@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="HealthNest My Health Diary: small steps toward healthier everyday habits.">
+        <title>My Health Diary | HealthNest</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script defer src="js/script.js"></script>
+    </head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <span class="brand-mark">✳</span>
+            <span>HealthNest<small>Small steps. Healthier life.</small>
+            </span></a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a class="" href="index.html">Home</a>
+                <a class="" href="dashboard.html">Dashboard</a>
+                <a class="" href="goals.html">Goals</a>
+                <a class="" href="natural-care.html">Natural Care</a>
+                <a class="" href="nutrition.html">Nutrition</a>
+                <a class="" href="fitness.html">Fitness</a>
+                <a class="" href="health-library.html">Library</a>
+                <a class="" href="diary.html">Diary</a><a class="" href="chat.html">Chat</a>
+            </nav>
+            
+            <a class="header-cta" href="goals.html">Plan my day <span>↗</span></a>
+        </header>
+<main>
+    <section class="page-hero container">
+        <div>
+            <span class="eyebrow">
+                <span class="dot">
+
+                </span> A PRIVATE SPACE TO REFLECT</span>
+                <h1>Notice your patterns, <em>without judgement.</em></h1>
+                <p class="lead">Write a quick daily reflection about your habits, energy or routine.</p>
+            </div>
+            <div class="page-hero-art">
+                <span>✳</span>
+                <i>♧</i>
+            </div>
+        </section>
+        <section class="container page-content">
+<section class="content-grid diary-layout">
+    <div class="panel">
+        <span class="eyebrow">DAILY REFLECTION</span>
+        <h2>How was your day?</h2>
+        <form id="diary-form" class="stack-form">
+            <label for="diary-date">Date</label>
+            <input id="diary-date" type="date" required>
+            <label for="diary-mood">How are you feeling?</label>
+            <select id="diary-mood">
+                <option>Okay</option>
+                <option>Good</option>
+                <option>Calm</option>
+                <option>Tired</option>
+                <option>Stressed</option>
+                <option>Low</option>
+            </select>
+            <label for="diary-note">Your notes</label>
+            <textarea id="diary-note" rows="5" maxlength="1200" placeholder="What went well? What would you like to try tomorrow?"></textarea>
+            <button class="btn btn-primary" type="submit">Save reflection <span>✓</span></button>
+            <p class="form-hint">Notes are saved in this browser only. Avoid entering highly sensitive medical details.</p>
+        </form>
+    </div>
+    <div class="panel">
+        <div class="panel-heading">
+            <div>
+                <span class="eyebrow">YOUR ENTRIES</span>
+                <h2>Recent reflections</h2>
+            </div>
+            <button class="small-button" id="export-diary" type="button">Export</button>
+        </div>
+        <div id="diary-entries" class="diary-entries">
+            <p class="empty-state">Your saved reflections will appear here.</p>
+        </div>
+    </div>
+</section>
+<div class="notice">
+    <span>🔒</span>
+    <div>
+        <strong>Your privacy matters</strong>
+        <p>This prototype uses local browser storage, not encrypted cloud storage. Anyone with access to this browser profile may be able to see saved notes. Use a personal device and clear entries when needed.</p>
+    </div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+    <a class="brand" href="index.html">
+        <span class="brand-mark">✳</span>
+        <span>HealthNest<small>Small steps. Healthier life.</small></span>
+    </a>
+    <p>Wellness guidance for everyday life — not a replacement for medical care.</p>
+    <div>
+        <a href="privacy.html">Privacy & safety</a>
+        <a href="profile.html">Profile & settings</a>
+        <span>© <span data-year></span> HealthNest</span>
+    </div>
+</footer>
+</body>
+</html>
